@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Admin Panel - Reservations</title>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- Favicon Tag -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <!-- Mobile Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link href="includes/bootstrap.min.css" rel="stylesheet">
+  <link href="includes/style.css" rel="stylesheet">
+  <link href="includes/material-icons/material-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="logo">Admin Panel</div>
+
+  <header>Reservations</header>
+
+  <div class="sidebar">
+    <ul>
+      <li><a title="" href="./dashboard.html"><i class="material-icons">home</i> Dashboard</a></li>
+      <li><a title="" href="./hotels.html"><i class="material-icons">hotel</i> Hotels</a></li>
+      <li><a title="" href="./users.html"><i class="material-icons">people</i> Users</a></li>
+      <li><a title="" href="./reservations.html"><i class="material-icons">event_available</i> Reservations</a></li>
+      <li><a title="" href="./complains.html"><i class="material-icons">announcement</i> Complains<span id="complains-number">2</span></a></li>
+      <li><a title="" href="./messages.html"><i class="material-icons">mail</i> Messages<span id="messages-number">27</span></a></li>
+      <li><a title="" href="./faq.html"><i class="material-icons">question_answer</i> FAQ</a></li>
+      <li><a title="" href="./general.html"><i class="material-icons">settings</i> General Settings</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+
+    <table>
+      <tbody>
+        <tr>
+          <th>ID</th>
+          <th>Hotel</th>
+          <th>User</th>
+          <th>Checkin</th>
+          <th>Nights</th>
+          <th>Room Type</th>
+          <th>Price</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Fairmont Helipolos</td>
+          <td>Abdelrahman Ayman</td>
+          <td>16/3/2019</td>
+          <td>3</td>
+          <td>Double</td>
+          <td>3750 LE</td>
+          <td><span class="active">Active</span></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Fairmont Helipolos</td>
+          <td>Mahmoud Sami</td>
+          <td>30/3/2019</td>
+          <td>2</td>
+          <td>Double</td>
+          <td>3750 LE</td>
+          <td><span class="active">Active</span></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Fairmont Helipolos</td>
+          <td>Ahmed Mohamed</td>
+          <td>29/3/2019</td>
+          <td>1</td>
+          <td>Double</td>
+          <td>3750 LE</td>
+          <td><span class="active">Active</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Fairmont Helipolos</td>
+          <td>Mahmoud Sami</td>
+          <td>16/4/2019</td>
+          <td>3</td>
+          <td>Double</td>
+          <td>3750 LE</td>
+          <td><span class="canceled">Canceled</span></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Novotel Hotel</td>
+          <td>Ahmed Mohamed</td>
+          <td>14/3/2019</td>
+          <td>2</td>
+          <td>Single</td>
+          <td>1450 LE</td>
+          <td><span class="expired">Expired</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- JavaScript -->
+  <script src="includes/jquery/jquery.min.js"></script>
+  <script src="includes/scripts.js"></script>
+
+</body>
+
+</html>

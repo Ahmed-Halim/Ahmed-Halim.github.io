@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Admin Panel - Edit Hotel</title>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- Favicon Tag -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <!-- Mobile Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link href="includes/bootstrap.min.css" rel="stylesheet">
+  <link href="includes/style.css" rel="stylesheet">
+  <link href="includes/material-icons/material-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="logo">Admin Panel</div>
+
+  <header>Edit Hotel</header>
+
+  <div class="sidebar">
+    <ul>
+      <li><a title="" href="./dashboard.html"><i class="material-icons">home</i> Dashboard</a></li>
+      <li><a title="" href="./hotels.html"><i class="material-icons">hotel</i> Hotels</a></li>
+      <li><a title="" href="./users.html"><i class="material-icons">people</i> Users</a></li>
+      <li><a title="" href="./reservations.html"><i class="material-icons">event_available</i> Reservations</a></li>
+      <li><a title="" href="./complains.html"><i class="material-icons">announcement</i> Complains<span id="complains-number">2</span></a></li>
+      <li><a title="" href="./messages.html"><i class="material-icons">mail</i> Messages<span id="messages-number">27</span></a></li>
+      <li><a title="" href="./faq.html"><i class="material-icons">question_answer</i> FAQ</a></li>
+      <li><a title="" href="./general.html"><i class="material-icons">settings</i> General Settings</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+
+    <form action="#" method="POST">
+      <label>Hotel Name <input type="text" name="hotel-name" placeholder="Hotel Name .." value="Fairmont Helipolos"/></label>
+      <label>Location <input type="text" name="hotel-location" placeholder="Hotel Location .." value="Cairo, Egypt	"/></label>
+      <label>Hotel Description <textarea name="hotel-description" placeholder="Describe this hotel .. ..">Situated in Cairo in the Cairo Governate Region, 200 m from The Egyptian Museum, Steigenberger El Tahrir features an outdoor pool and sauna. Guests can enjoy the on-site restaurant. Free WiFi is featured throughout the property and private parking is available on site.</textarea></label>
+      <label>Hotel on Google Map <input type="url" name="hotel-google-map" placeholder="URL of hotel on google map"  value="https://www.google.com/maps/dir//30.158552,31.606747/@30.1585532,31.6072942,19z"/></label>
+      <label>Facilities</label>
+      <input type="checkbox" name="air-conditioner" checked/> Air Conditioner<br>
+      <input type="checkbox" name="wifi" checked/> Wifi<br>
+      <input type="checkbox" name="room-service" checked/> Room service<br>
+      <input type="checkbox" name="swimming-pool" checked/> Swimming pool<br>
+      <input type="checkbox" name="restaurant" checked/> Restaurant<br>
+      <input type="checkbox" name="bar" /> Bar<br>
+      <input type="checkbox" name="tv" /> TV<br>
+      <input type="checkbox" name="locker" /> Locker<br>
+      <input type="checkbox" name="parking" checked/> Parking<br>
+      <input type="checkbox" name="airport-shuttle" /> Airport Shuttle<br>
+      <input type="checkbox" name="spa" /> Spa<br><br>
+      <label>Single price <input type="text" name="single" placeholder="Single room price in egyptian pound"  value="1200 LE"/></label>
+      <label>Double Price <input type="text" name="double" placeholder="Double room price in egyptian pound"  value="2200 LE"/></label>
+      <label>Suit Price <input type="text" name="suit" placeholder="Suit price in egyptian pound"  value="3000 LE"/></label>
+      <label>Image 1 <input type="file" name="image1"/></label>
+      <label>Image 2 <input type="file" name="image2"/></label>
+      <label>Image 3 <input type="file" name="image3"/></label>
+
+      <input type="submit" name="submit" id="btn" value="Submit"/>
+    </form>
+
+
+
+  </div>
+  <!-- JavaScript -->
+  <script src="includes/jquery/jquery.min.js"></script>
+  <script src="includes/scripts.js"></script>
+
+</body>
+
+</html>

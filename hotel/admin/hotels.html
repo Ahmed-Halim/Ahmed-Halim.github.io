@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Admin Panel - Hotels</title>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- Favicon Tag -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <!-- Mobile Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link href="includes/bootstrap.min.css" rel="stylesheet">
+  <link href="includes/style.css" rel="stylesheet">
+  <link href="includes/material-icons/material-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="logo">Admin Panel</div>
+
+  <header>Hotels</header>
+
+  <div class="sidebar">
+    <ul>
+      <li><a title="" href="./dashboard.html"><i class="material-icons">home</i> Dashboard</a></li>
+      <li><a title="" href="./hotels.html"><i class="material-icons">hotel</i> Hotels</a></li>
+      <li><a title="" href="./users.html"><i class="material-icons">people</i> Users</a></li>
+      <li><a title="" href="./reservations.html"><i class="material-icons">event_available</i> Reservations</a></li>
+      <li><a title="" href="./complains.html"><i class="material-icons">announcement</i> Complains<span id="complains-number">2</span></a></li>
+      <li><a title="" href="./messages.html"><i class="material-icons">mail</i> Messages<span id="messages-number">27</span></a></li>
+      <li><a title="" href="./faq.html"><i class="material-icons">question_answer</i> FAQ</a></li>
+      <li><a title="" href="./general.html"><i class="material-icons">settings</i> General Settings</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <a title="" id="btn" href="./add-hotel.html"><i class="material-icons">add</i> Add New Hotel</a>
+
+    <table>
+      <tbody>
+        <tr>
+          <th>ID</th>
+          <th>Hotel Name</th>
+          <th>Location</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Fairmont Helipolos</td>
+          <td>Cairo, Egypt</td>
+          <td>
+            <a title="" href="./edit-hotel.html"><i class="material-icons edit">edit</i></a>
+            <a title="" href="#"><i class="material-icons delete">delete</i></a>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Kempinski Hotel</td>
+          <td>Cairo, Egypt</td>
+          <td>
+            <a title="" href="./edit-hotel.html"><i class="material-icons edit">edit</i></a>
+            <a title="" href="#"><i class="material-icons delete">delete</i></a>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Steigenberger Hotel</td>
+          <td>Cairo, Egypt</td>
+          <td>
+            <a title="" href="./edit-hotel.html"><i class="material-icons edit">edit</i></a>
+            <a title="" href="#"><i class="material-icons delete">delete</i></a>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Royal Maxim Hotel</td>
+          <td>Cairo, Egypt</td>
+          <td>
+            <a title="" href="./edit-hotel.html"><i class="material-icons edit">edit</i></a>
+            <a title="" href="#"><i class="material-icons delete">delete</i></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- JavaScript -->
+  <script src="includes/jquery/jquery.min.js"></script>
+  <script src="includes/scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hotel Manager Panel - Dashboard</title>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- Favicon Tag -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <!-- Mobile Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link href="includes/bootstrap.min.css" rel="stylesheet">
+  <link href="includes/style.css" rel="stylesheet">
+  <link href="includes/material-icons/material-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="logo">Hotel Manager Panel</div>
+
+  <header>Dashboard</header>
+
+  <div class="sidebar">
+    <ul>
+      <li><a title="" href="./dashboard.html"><i class="material-icons">home</i> Dashboard</a></li>
+      <li><a title="" href="./reservations.html"><i class="material-icons">event_available</i> Reservations</a></li>
+      <li><a title="" href="./edit-hotel.html"><i class="material-icons">hotel</i> Edit Hotel Info</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+    <div id="dashboard-items">
+      <div id="dashboard-1"><h1>320</h1><p>Reservation</p></div>
+      <div id="dashboard-2"><h1>256</h1><p>Customer</p></div>
+      <div id="dashboard-3"><h1>16,000LE</h1><p>Revenue</p></div>
+      <div id="dashboard-4"><h1>3</h1><p>Rank</p></div>
+    </div>
+
+    <canvas id="myChart"></canvas>
+
+  </div>
+  <!-- JavaScript -->
+  <script src="includes/jquery/jquery.min.js"></script>
+  <script src="includes/scripts.js"></script>
+  <script src="includes/charts/Chart.js"></script>
+  <script>
+  var ctx = document.getElementById('myChart');
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu' , 'Fri'],
+      datasets: [{
+        label: ' No. of reservations ',
+        data: [12, 19, 10, 12, 7, 9 , 7],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 2
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  });
+  </script>
+</body>
+
+</html>

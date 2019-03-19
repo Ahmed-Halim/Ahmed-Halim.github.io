@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Admin Panel - General Settings</title>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- Favicon Tag -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <!-- Mobile Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link href="includes/bootstrap.min.css" rel="stylesheet">
+  <link href="includes/style.css" rel="stylesheet">
+  <link href="includes/material-icons/material-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="logo">Admin Panel</div>
+
+  <header>General Settings</header>
+
+  <div class="sidebar">
+    <ul>
+      <li><a title="" href="./dashboard.html"><i class="material-icons">home</i> Dashboard</a></li>
+      <li><a title="" href="./hotels.html"><i class="material-icons">hotel</i> Hotels</a></li>
+      <li><a title="" href="./users.html"><i class="material-icons">people</i> Users</a></li>
+      <li><a title="" href="./reservations.html"><i class="material-icons">event_available</i> Reservations</a></li>
+      <li><a title="" href="./complains.html"><i class="material-icons">announcement</i> Complains<span id="complains-number">2</span></a></li>
+      <li><a title="" href="./messages.html"><i class="material-icons">mail</i> Messages<span id="messages-number">27</span></a></li>
+      <li><a title="" href="./faq.html"><i class="material-icons">question_answer</i> FAQ</a></li>
+      <li><a title="" href="./general.html"><i class="material-icons">settings</i> General Settings</a></li>
+    </ul>
+  </div>
+
+  <div id="main">
+
+    <form action="#" method="POST">
+      <h4>General</h4>
+      <label>Site Title <input type="text" name="site-title" placeholder="Site Title .." value="Holiday"/></label>
+      <label>Site Description <textarea name="site-description" placeholder="Describe your site .. .."></textarea></label>
+      <label>Site Keywords <textarea name="site-keywords" placeholder="Keywords related to your site .."></textarea></label>
+
+      <h4>Social Media</h4>
+      <label>Facebook <input type="url" name="facebook" placeholder="Facebook page URL"/></label>
+      <label>Twitter <input type="url" name="twitter" placeholder="Twitter account URL"/></label>
+      <label>Youtube <input type="url" name="youtube" placeholder="Youtube channel URL"/></label>
+      <label>Instagram <input type="url" name="instagram" placeholder="Instagram account URL"/></label>
+
+      <h4>More from us</h4>
+      <label>About us <textarea name="about-us" placeholder="Who we are ?"></textarea></label>
+      <label>Terms <textarea name="terms" placeholder="Terms and conditions .."></textarea></label>
+      <label>Privacy Policy <textarea name="privacy-policy" placeholder="Privacy policy .."></textarea></label>
+
+
+      <h4>Mobile app</h4>
+      <label>Android <input type="url" name="android" placeholder="Android app URL"/></label>
+      <label>IOS <input type="url" name="ios" placeholder="IOS app URL"/></label>
+
+      <input type="submit" name="submit" id="btn" value="Save Changes"/>
+    </form>
+
+
+
+  </div>
+  <!-- JavaScript -->
+  <script src="includes/jquery/jquery.min.js"></script>
+  <script src="includes/scripts.js"></script>
+
+</body>
+
+</html>
