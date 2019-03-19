@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Complains</title>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- Favicon Tag -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <!-- Mobile Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link href="includes/bootstrap.min.css" rel="stylesheet">
+  <link href="includes/jquery/jquery-ui.css" rel="stylesheet">
+  <link href="includes/style.css" rel="stylesheet">
+  <link href="includes/responsive.css" rel="stylesheet">
+  <link href="includes/font-awesome/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+    <div class="container">
+
+      <a title="" href="./home.html">
+        <img alt="" id="logo" src="images/logo.png">
+      </a>
+
+
+      <ul class="languagepicker roundborders large">
+        <li><a title="" href="#en"><img alt="" src="images/flags/en.png"/>English</a></li>
+        <li><a title="" href="#ar"><img alt="" src="images/flags/ar.png"/>Arabic</a></li>
+        <li><a title="" href="#de"><img alt="" src="images/flags/de.png"/>German</a></li>
+        <li><a title="" href="#fr"><img alt="" src="images/flags/fr.png"/>Français</a></li>
+        <li><a title="" href="#es"><img alt="" src="images/flags/es.png"/>Español</a></li>
+        <li><a title="" href="#it"><img alt="" src="images/flags/it.png"/>Italiano</a></li>
+      </ul>
+
+
+      <nav id="menu">
+        <ul>
+          <li><a title="" href="./home.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a title="" href="./hotels.html"><i class="fas fa-building"></i> Hotels</a></li>
+          <li><a title="" href="./register.html"><i class="fas fa-user-plus"></i> Register</a></li>
+          <li><a title="" href="./login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        </ul>
+
+        <div class="mobile-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+      
+    </div>
+  </header>
+
+
+  <div class="container mobile-p-30">
+    <div class="border-container main">
+      <div class="row">
+        <div class="offset-md-2 col-sm-8">
+
+          <h4 class="m-b-30">Send a message</h4>
+
+          <form action="#" method="GET">
+            <div class="row">
+              <div class="col-sm-12">
+                <input type="text" name="name" placeholder="Name"/>
+              </div>
+              <div class="col-sm-12">
+                <input type="email" name="email" placeholder="Email"/>
+              </div>
+              <div class="col-sm-12">
+                <input type="text" name="message-title" placeholder="Message Title"/>
+              </div>
+              <div class="col-sm-12">
+                <textarea name="message-text" placeholder="Message Text"></textarea>
+              </div>
+            </div>
+
+            <input type="submit" id="btn" value="Send"/>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <i id="top" class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+
+  <div class="popupForm">
+    <span class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></span>
+    <h4 id="popupTitle">Title</h4>
+    <p id="popupBody"></p>
+  </div>
+
+
+
+  <div class="annoncement">
+    <p>This website uses cookies</p>
+    <span id="more">More</span>
+    <span class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></span>
+  </div>
+
+  <footer class="dark">
+
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-sm-4 col-md-4">
+          <h3><strong>MORE FROM US</strong></h3>
+          <ul class="clearfix">
+            <li id="aboutus">About us</li>
+            <li id="terms">Terms of use</li>
+            <li id="privacy">Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <h3><strong>Social Media</strong></h3>
+          <ul class="clearfix">
+            <li><a title="" href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+            <li><a title="" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a title="" href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+            <li><a title="" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <h3><strong>Help !</strong></h3>
+          <ul class="clearfix">
+            <li><a title="" href="./faq.html">FAQ</a></li>
+            <li><a title="" href="./complains.html">Complains</a></li>
+            <li><a title="" href="./contact.html">Contact us</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-sm-4 col-md-2">
+
+          <h3><strong>Get Our App</strong></h3>
+          <ul class="clearfix">
+            <li><a title="" href="#"><img alt="" class="download-app" src="images/ios.png" /></a></li>
+            <li><a title="" href="#"><img alt="" class="download-app" src="images/android.png" /></a></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="includes/jquery/jquery.min.js"></script>
+  <script src="includes/jquery/jquery-ui.js"></script>
+  <script src="includes/scripts.js"></script>
+
+</body>
+
+</html>

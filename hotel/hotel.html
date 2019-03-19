@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Novotel Hotel</title>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- Favicon Tag -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <!-- Mobile Meta Tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS -->
+  <link href="includes/bootstrap.min.css" rel="stylesheet">
+  <link href="includes/jquery/jquery-ui.css" rel="stylesheet">
+  <link href="includes/style.css" rel="stylesheet">
+  <link href="includes/responsive.css" rel="stylesheet">
+  <link href="includes/font-awesome/css/all.css" rel="stylesheet">
+  <link href="includes/material-icons/material-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+    <div class="container">
+
+      <a title="" href="./home.html">
+        <img alt="" id="logo" src="images/logo.png">
+      </a>
+
+
+      <ul class="languagepicker roundborders large">
+        <li><a title="" href="#en"><img alt="" src="images/flags/en.png"/>English</a></li>
+        <li><a title="" href="#ar"><img alt="" src="images/flags/ar.png"/>Arabic</a></li>
+        <li><a title="" href="#de"><img alt="" src="images/flags/de.png"/>German</a></li>
+        <li><a title="" href="#fr"><img alt="" src="images/flags/fr.png"/>Français</a></li>
+        <li><a title="" href="#es"><img alt="" src="images/flags/es.png"/>Español</a></li>
+        <li><a title="" href="#it"><img alt="" src="images/flags/it.png"/>Italiano</a></li>
+      </ul>
+
+
+      <nav id="menu">
+        <ul>
+          <li><a title="" href="./home.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a title="" href="./hotels.html"><i class="fas fa-building"></i> Hotels</a></li>
+          <li><a title="" href="./register.html"><i class="fas fa-user-plus"></i> Register</a></li>
+          <li><a title="" href="./login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        </ul>
+
+        <div class="mobile-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <div class="container mobile-p-30">
+
+    <div class="ProgressBar">
+      <div class="bar-outer">
+        <div id="progress2" class="bar-inner">
+          <div class="ball"></div>
+        </div>
+      </div>
+
+      <div class="bar-text">
+        <span>Start</span>
+        <span>Book Hotel</span>
+        <span>Payment</span>
+        <span>Finish</span>
+      </div>
+    </div>
+
+    <div class="border-container">
+
+
+      <div class="row">
+        <div class="col-sm-12 col-md-5">
+
+          <div class="slideshow-container">
+            <img alt="" class="fadeIn SlideImg" src="images/hotel1.jpg">
+            <img alt="" class="fadeIn SlideImg" src="images/hotel2.jpg">
+            <img alt="" class="fadeIn SlideImg" src="images/hotel3.jpg">
+
+            <a title="" class="prev" onclick="plusSlide(-1)">&#10094;</a>
+            <a title="" class="next" onclick="plusSlide(1)">&#10095;</a>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12 col-md-7">
+
+          <h2>Novotel Hotel</h2>
+          <em id="Hotel-Location">Cairo, Egypt</em>
+          <p id="Hotel-Description">Situated in Cairo in the Cairo Governate Region, 200 m from The Egyptian Museum, Steigenberger El Tahrir features an outdoor pool and sauna. Guests can enjoy the on-site restaurant. Free WiFi is featured throughout the property and private parking is available on site.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12 m-t-30 m-b-30">
+          <h4>Facilities</h4>
+          <div class="facilities row">
+
+            <div class="col-sm-6 col-md-3"><i class="material-icons">ac_unit</i> Air Conditioner</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">fitness_center</i> Fitness centre</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">wifi</i> Wifi</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">room_service</i> Room service</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">pool</i> Swimming pool</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">restaurant</i> Restaurant</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">local_bar</i> Bar</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">tv</i> TV</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">vpn_key</i> Locker</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">local_parking</i> Parking</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">airport_shuttle</i> Airport Shuttle</div>
+            <div class="col-sm-6 col-md-3"><i class="material-icons">spa</i> Spa</div>
+
+          </div>
+        </div>
+      </div>
+
+      <h4 class="m-b-20">Location</h4>
+      <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=sofitel&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+      <h5 id="make-reservation">Book Now</h5>
+
+      <div id="Error" class="m-b-30"></div>
+
+      <form autocomplete="off" action="./payment.html" method="GET" id="Reservation">
+        <div class="row">
+          <div class="col-sm-6">
+            <input id="checkin" name="checkin" placeholder="Check-in date"/>
+          </div>
+          <div class="col-sm-6">
+            <select name="nights" id="nights">
+              <option value="0">Number of nights</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+          </div>
+        </div>
+
+        <input id="room" name="room" />
+        <input id="payment" name="payment" />
+
+        <div class="row">
+          <div class="col-sm-4 col-md-4">
+            <div class="RoomType">Single</div>
+            <div id="Single-Price">1000</div>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <div class="RoomType">Double</div>
+            <div id="Double-Price">2000</div>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <div class="RoomType">Suit</div>
+            <div id="Suit-Price">3000</div>
+          </div>
+        </div>
+
+        <div id="Success">
+          <div class="cart">
+            <ul>
+              <li><strong>Number of nights:</strong> <span id="numberNights"></span> night</li>
+              <li><strong>Room price:</strong> <span id="roomPrice"></span> LE</li>
+              <li><strong>Added value tax (14%):</strong> <span id="addedValuePrice"></span> LE</li>
+              <li><strong>Total due:</strong> <span id="totalDue"></span> LE</li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <input type="submit" value="Checkout" />
+            </div>
+          </div>
+        </div>
+
+
+      </form>
+
+
+
+
+    </div>
+
+  </div>
+
+  <i id="top" class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+
+  <div class="popupForm">
+    <span class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></span>
+    <h4 id="popupTitle">Title</h4>
+    <p id="popupBody"></p>
+  </div>
+
+
+
+  <div class="annoncement">
+    <p>This website uses cookies</p>
+    <span id="more">More</span>
+    <span class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></span>
+  </div>
+
+  <footer class="dark">
+
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-sm-4 col-md-4">
+          <h3><strong>MORE FROM US</strong></h3>
+          <ul class="clearfix">
+            <li id="aboutus">About us</li>
+            <li id="terms">Terms of use</li>
+            <li id="privacy">Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <h3><strong>Social Media</strong></h3>
+          <ul class="clearfix">
+            <li><a title="" href="#"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+            <li><a title="" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a title="" href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+            <li><a title="" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4 col-md-3">
+          <h3><strong>Help !</strong></h3>
+          <ul class="clearfix">
+            <li><a title="" href="./faq.html">FAQ</a></li>
+            <li><a title="" href="./complains.html">Complains</a></li>
+            <li><a title="" href="./contact.html">Contact us</a></li>
+          </ul>
+
+        </div>
+
+        <div class="col-sm-4 col-md-2">
+
+          <h3><strong>Get Our App</strong></h3>
+          <ul class="clearfix">
+            <li><a title="" href="#"><img alt="" class="download-app" src="images/ios.png" /></a></li>
+            <li><a title="" href="#"><img alt="" class="download-app" src="images/android.png" /></a></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script src="includes/jquery/jquery.min.js"></script>
+  <script src="includes/jquery/jquery-ui.js"></script>
+  <script src="includes/scripts.js"></script>
+
+</body>
+
+</html>
